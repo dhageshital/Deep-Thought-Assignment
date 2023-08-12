@@ -1,0 +1,47 @@
+c:  Cross-Browser Testing
+
+
+2..Run the test cases and validate if processes work consistently across the chosen browsers.		
+
+
+1.GoogleChromeBrowser Code:
+
+public class deepthoughtloginpage
+{
+    
+ public static void main(String[] args) 
+{      
+         System.setProperty("webdriver.chrome.driver","path");
+         WebDriver driver=new ChromeDriver(); 
+         driver.get("https://beta.deepthought.education/login");
+         driver.findElement(By.id("username")).sendKeys("shitaldhage0305@gmail.com");
+         driver.findElement(By.id("password")).sendKeys("sagar143@");
+         driver.findElement(By.id("login")).click();
+}
+}
+
+
+2.FireFoxBrowser Code:
+
+public class deepthoughtloginpage
+{
+    
+ public static void main(String[] args) 
+{      
+         
+System.setproperty("webdriver. gecko. driver",Path_of_Firefox_Driver");  
+        
+         WebDriver driver=new Firefox Driver(GeckoDriver);
+         driver.get("https://beta.deepthought.education/login");
+         driver.findElement(By.id("username")).sendKeys("shitaldhage0305@gmail.com");
+         driver.findElement(By.id("password")).sendKeys("sagar143@");
+         driver.findElement(By.id("login")).click();
+}
+}
+
+
+D. Document your testing approach, including the test cases, and any challenges faced during testing.		
+
+
+Selenium automation faces real-time challenges such as dealing with dynamic web content, synchronization issues between the automation
+ tool and the application being tested, and cross-browser compatibility issues.

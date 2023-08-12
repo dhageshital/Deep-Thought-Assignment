@@ -1,0 +1,71 @@
+Automated test cases to be written:::
+
+	
+1.Test successful login with valid credentials.	
+	
+public class deepthoughtloginpage
+{
+    
+ public static void main(String[] args) 
+{      
+         System.setProperty("webdriver.chrome.driver","path");
+         WebDriver driver=new ChromeDriver(); 
+         driver.get("https://beta.deepthought.education/login");
+         driver.findElement(By.id("username")).sendKeys("shitaldhage0305@gmail.com");
+         driver.findElement(By.id("password")).sendKeys("sagar143@");
+         driver.findElement(By.id("login")).click();
+}
+}
+
+
+
+2.Test unsuccessful login attempts with invalid credentials.	
+	
+public class deepthoughtloginpage
+{
+    
+ public static void main(String[] args) 
+{      
+         System.setProperty("webdriver.chrome.driver","path");
+         WebDriver driver=new ChromeDriver(); 
+         driver.get("https://beta.deepthought.education/login");
+         driver.findElement(By.id("username")).sendKeys("shitaldhage03@gmail.com");
+         driver.findElement(By.id("password")).sendKeys("sagar@");
+         driver.findElement(By.id("login")).click();
+}
+}
+
+
+3.Validate that appropriate error messages are displayed for invalid login attempts.		
+
+public class deepthoughtloginpage
+{
+    
+ public static void main(String[] args) 
+{      
+         System.setProperty("webdriver.chrome.driver","path");
+         WebDriver driver=new ChromeDriver(); 
+         driver.get("https://beta.deepthought.education/login");
+         driver.findElement(By.id("username")).sendKeys("shitaldhage03@gmail.com");
+         driver.findElement(By.id("password")).sendKeys("sagar@");
+         driver.findElement(By.id("login")).click();
+}
+}
+
+
+
+
+4.On successful login, validate that the user is redirected to the dashboard screen.		
+
+public class deepthoughtloginpage
+{
+public static void main(String[] args) 
+{      
+         System.setProperty("webdriver.chrome.driver","path");
+         WebDriver driver=new ChromeDriver(); 
+         driver.get("https://beta.deepthought.education/login");
+         driver.findElement(By.id("username")).sendKeys("shitaldhage0305@gmail.com");
+         driver.findElement(By.id("password")).sendKeys("sagar143@");
+         driver.findElement(By.id("login")).click();
+}
+}
